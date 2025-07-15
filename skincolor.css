@@ -1,0 +1,30 @@
+.colors span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+/* Individual Button Colors */
+.color-1 {
+    background-color: #ec1839; /* Red */
+}
+
+.color-2 {
+    background-color: #0fdf8f; /* Green */
+}
+
+.color-3 {
+    background-color: #1854b4; /* Blue */
+}
+
+.color-4 {
+    background-color: #f021b2; /* Pink */
+}
+
+.color-5 {
+    background-color: #f5570e; /* Orange */
+}

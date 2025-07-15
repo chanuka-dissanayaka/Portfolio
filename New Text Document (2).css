@@ -1,0 +1,109 @@
+/* Root variables for themes */
+:root {
+  --bg-black-100: #fff;
+  --bg-black-50: #ccc;
+  --text-black-900: #000;
+  --text-black-700: #333;
+}
+
+body {
+  background: var(--bg-black-100);
+  color: var(--text-black-900);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: all 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+/* Dark Mode */
+body.dark {
+  background: var(--text-black-900);
+  color: var(--bg-black-100);
+}
+
+/* Style Switcher */
+.style-switcher {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  padding: 15px;
+  width: 200px;
+  border: 1px solid var(--bg-black-50);
+  background: var(--bg-black-100);
+  z-index: 101;
+  border-radius: 5px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.style-switcher.open {
+  transform: translateX(-25px);
+}
+
+.s-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  background: var(--bg-black-100);
+  color: var(--text-black-900);
+  right: 100%;
+  border: 1px solid var(--bg-black-50);
+  margin-right: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.style-switcher .s-icon i {
+  line-height: 40px;
+}
+
+.style-switcher .day-night {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.style-switcher .theme-toggle {
+  cursor: pointer;
+  background: var(--bg-black-50);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: var(--text-black-900);
+  font-size: 14px;
+  transition: all 0.3s ease, color 0.3s ease;
+}
+
+.style-switcher .theme-toggle i {
+  margin-right: 5px;
+}
+
+/* Theme Colors */
+.style-switcher .colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.style-switcher .colors span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.style-switcher .color-1 {
+  background-color: #ec1839; /* Red */
+}
+.style-switcher .color-2 {
+  background-color: #fa5b0f; /* Orange */
+}
+.style-switcher .color-3 {
+  background-color: #37b182; /* Green */
+}
+.style-switcher .color-4 {
+  background-color: #1854b4; /* Blue */
+}
+.style-switcher .color-5 {
+  background-color: #f021b2; /* Pink */
+}
